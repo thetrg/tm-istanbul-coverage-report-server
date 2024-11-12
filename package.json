@@ -1,0 +1,41 @@
+{
+  "name": "@thetrg/tm-istanbul-coverage-report-server",
+  "version": "0.1.0",
+  "description": "A simple live reporter for the nyc and istanbul generated code coverage reports",
+  "author": "The TRG, LLC",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "istanbul",
+    "nyc",
+    "html",
+    "report",
+    "server"
+  ],
+  "type": "module",
+  "scripts": {
+    "browser:build": "npx vite build",
+    "browser:dev": "npx vite build --watch",
+    "server": "node src/js/server/start.js",
+    "server:dev": "npx nodemon --exec \"clear && pnpm run server\" --watch src/js/server",
+    "symlink": "pnpm link --global @thetrg/istanbul-middleware",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "minimist": "^1.2.8",
+    "morgan": "^1.10.0",
+    "serve-static": "^1.16.2",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "less": "^4.2.0",
+    "nodemon": "^3.1.7",
+    "uikit": "^3.21.13",
+    "vite": "^5.4.11"
+  }
+}
