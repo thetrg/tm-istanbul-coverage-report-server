@@ -1,7 +1,7 @@
 {
   "name": "@thetrg/tm-istanbul-coverage-report-server",
   "version": "0.1.0",
-  "description": "A simple live reporter for the nyc and istanbul generated code coverage reports",
+  "description": "A live reporter for the nyc and istanbul generated code coverage",
   "author": "The TRG, LLC",
   "license": "MIT",
   "main": "index.js",
